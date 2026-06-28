@@ -4,6 +4,9 @@
   "keywords": [
     "slidev-theme"
   ],
+  "peerDependencies": {
+    "@slidev/types": "^52.16.0"
+  },
   "slidev": {
     "colorSchema": "dark"
   }

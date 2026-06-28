@@ -21,6 +21,7 @@
 }
 
 .slidev-layout h1 {
+  font-size: 32px;
   color: var(--dracula-purple);
   border-bottom: 2px solid var(--dracula-surface);
   padding-bottom: 0.4rem;
@@ -55,14 +56,65 @@
 
 .slidev-layout code {
   background-color: var(--dracula-surface);
-  color: var(--dracula-cyan);
+  color: var(--dracula-fg);
   padding: 0.1em 0.4em;
   border-radius: 4px;
   font-size: 0.9em;
 }
 
 .slidev-layout pre {
-  background-color: var(--dracula-surface) !important;
+  background-color: var(--dracula-bg) !important;
+  color: var(--dracula-fg) !important;
   border: 1px solid var(--dracula-comment);
   border-radius: 8px;
+}
+
+.slidev-layout pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1em;
+}
+
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin-bottom: 1lh;
+}
+
+.slidev-layout thead tr {
+  background-color: var(--dracula-surface);
+}
+
+.slidev-layout thead th {
+  color: var(--dracula-cyan);
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid var(--dracula-purple);
+}
+
+.slidev-layout tbody tr:nth-child(even) {
+  background-color: rgba(68, 71, 90, 0.3);
+}
+
+.slidev-layout tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+.slidev-layout tbody td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid rgba(98, 114, 164, 0.3);
+  color: var(--dracula-fg);
+}
+
+.slidev-layout tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.slidev-layout tbody tr:last-child {
+  background-color: rgba(189, 147, 249, 0.1);
+  font-weight: 600;
 }
