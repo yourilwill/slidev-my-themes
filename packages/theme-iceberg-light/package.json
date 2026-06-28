@@ -1,0 +1,19 @@
+{
+  "name": "slidev-theme-iceberg-light",
+  "version": "0.1.0",
+  "keywords": [
+    "slidev-theme"
+  ],
+  "peerDependencies": {
+    "@slidev/types": "^52.16.0"
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "fonts": {
+        "sans": "Noto Sans JP",
+        "mono": "Source Code Pro"
+      }
+    }
+  }
+}
