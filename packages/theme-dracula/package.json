@@ -1,0 +1,10 @@
+{
+  "name": "slidev-theme-dracula",
+  "version": "0.1.0",
+  "keywords": [
+    "slidev-theme"
+  ],
+  "slidev": {
+    "colorSchema": "dark"
+  }
+}

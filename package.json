@@ -1,0 +1,7 @@
+{
+  "name": "slidev-my-themes",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
