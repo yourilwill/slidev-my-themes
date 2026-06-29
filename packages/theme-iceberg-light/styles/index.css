@@ -84,12 +84,40 @@
 }
 
 .slidev-layout ol {
-  list-style-type: decimal;
-  padding-left: 1.5em;
+  list-style-type: none;
+  counter-reset: ol-counter;
+  padding-left: 2em;
+  font-size: 20pt;
+}
+
+.slidev-layout ol > li {
+  counter-increment: ol-counter;
+}
+
+.slidev-layout ol > li::before {
+  content: counter(ol-counter) ".";
+  color: var(--ice-blue);
+  font-weight: 700;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+  min-width: 1.2em;
 }
 
 .slidev-layout ol ol {
-  list-style-type: lower-alpha;
+  list-style-type: none;
+  counter-reset: ol-sub-counter;
+}
+
+.slidev-layout ol ol > li {
+  counter-increment: ol-sub-counter;
+}
+
+.slidev-layout ol ol > li::before {
+  content: counter(ol-counter) "-" counter(ol-sub-counter, lower-alpha) ".";
+  color: var(--ice-blue);
+  font-weight: 400;
+  margin-right: 0.5em;
+  flex-shrink: 0;
 }
 
 .slidev-layout li {
@@ -104,8 +132,7 @@
   flex-basis: 100%;
 }
 
-.slidev-layout ul li::marker,
-.slidev-layout ol li::marker {
+.slidev-layout ul li::marker {
   color: var(--ice-blue);
 }
 
