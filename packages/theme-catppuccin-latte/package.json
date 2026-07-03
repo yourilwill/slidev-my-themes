@@ -1,0 +1,13 @@
+{
+  "name": "slidev-theme-catppuccin-latte",
+  "version": "0.1.0",
+  "keywords": [
+    "slidev-theme"
+  ],
+  "peerDependencies": {
+    "@slidev/types": "^52.16.0"
+  },
+  "slidev": {
+    "colorSchema": "light"
+  }
+}
